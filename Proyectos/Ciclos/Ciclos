@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jan 19 17:57:17 2021
+
+@author: javi
+"""
+"""
+valor_max=(int(input("Dame un número: ")))
+
+contador=0
+while contador < valor_max:
+    print(contador)
+    contador+=1 #acumulador
+"""
+
+def multiplicacion(p,q):
+    #q debe ser le número menor
+    if(q>p):
+        #tenemos que cambiar el valor de q
+        temporal=q
+        q=p
+        p=temporal
+        
+    contador=0
+    suma=0
+    while(contador<q):
+        suma+=p
+        print(p,"+")
+        contador+=1
+    print("=", suma)
+    return suma
+
+multiplicacion(5,3)

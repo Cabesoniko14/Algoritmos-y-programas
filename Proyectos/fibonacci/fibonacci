@@ -1,0 +1,37 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+
+def fibonacci(n):
+    serie="0 1"
+    anterior=0
+    siguiente=1
+    contador=2
+    
+    if n==1:
+        return "0"
+    elif n==0:
+        return ""
+    while contador<n:
+        serie+=" " + str(anterior+siguiente)
+        temporal=anterior
+        anterior=siguiente # en un 2+3, a la siguiente el dos pasa a ser 3 2=3
+        siguiente=temporal+siguiente
+        contador+=1
+        
+    return serie # si tu pones el return en el while termina la funcion y ya no es iterativa
+
+
+print(fibonacci(0))
+print(fibonacci(1))
+print(fibonacci(2))
+print(fibonacci(3))
+print (fibonacci(4))
+print(fibonacci(5))
+print (fibonacci(6))
+
+
+    
